@@ -69,9 +69,6 @@ p {
 
 
 
-
-
-
 /*========================
 
 Nav
@@ -136,7 +133,7 @@ Sliding Nav
 }
 
 .sticky {
-    background-color: #e8890c; /* orange */
+    background-color: #f06924; /* orange */
     opacity: 1;
     top: 0px;
 }
@@ -230,7 +227,7 @@ section1
     min-height: 500px;
     height: inherit;
     background-color: #103c5e; 
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 
@@ -239,7 +236,22 @@ section1
 section2
 
 ========================*/
-#section2 { width: 100%; min-height: 500px; }
+#section2 { width: 100%; min-height: 500px; background-image: url("../img/section2/section2Bg.png") }
+
+#sectionHeader {
+    position: relative;
+    margin-bottom: 90px; 
+}
+
+img#headerImage {
+    position: absolute;
+    width: 520px;
+    top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
 
 #section2-content { 
     padding: 75px 0; 
@@ -248,7 +260,6 @@ section2
 }
 
 #section2-content h2, #section2-content h5 { color: #252525; text-align: center; }
-#section2-content h2 { margin-bottom: 40px; }
 #section2-content h5 { 
     max-width: 655px; 
     margin: 0 auto;
@@ -256,8 +267,8 @@ section2
 }
 
 #section2-content ul { margin-top: 40px; }
-#section2-content ul h4 { color: #e8890c; text-align: center; }
-#section2-content ul img { margin: 25px auto; display: block; }
+#section2-content ul h4 { color: #f06924; text-align: center; }
+#section2-content ul img { margin: 25px auto; display: block; height: 67px; }
 
 
 /*========================
@@ -265,22 +276,29 @@ section2
 section3
 
 ========================*/
-#section3 {
+#section3 { 
     width: 100%; 
     min-height: 500px;
     position: relative;
     background-color: #393838;
+    border-bottom: solid 10px #f06922;
 }
 
 #section3-info { padding: 50px 20px; }
 
 #section3 h3 {  color: #747475; }
-#section3 h3 span { color: #e8890c; }
+#section3 h3 span { color: #f06924; }
 #section3 h6 { 
     color: #747475; 
     max-width: 450px; 
     padding-top: 30px;
 }
+
+#section3-img {
+    padding: 60px;
+}
+
+/*
 
 #section3-video { padding: 50px; }
 
@@ -298,7 +316,7 @@ section3
     width: 100%;
     height: 100%;
 }
-
+*/
 /*========================
 
 section4
@@ -306,7 +324,7 @@ section4
 ========================*/
 #section4 { 
     position: relative; 
-    background: url('../img/section3/section3-bg.jpg') no-repeat center center fixed;
+    background: url('../img/section4/section4Bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -316,10 +334,14 @@ section4
     min-height: 500px;
 }
 
-
-#section4-content h6 { padding-top: 30px; }
-
-#section4 h3 span { color: #e8890c; }
+#section4 h3 { color: #f4f2f2; }
+#section4 h3 span { color: #f06924; } 
+#section4-content h6 { 
+    margin: 0;
+    color: #f4f2f2;
+    max-width: 430px;
+    padding-top: 30px; 
+}
 
 #section4-image { 
     padding: 50px 0;
@@ -336,27 +358,38 @@ section4
     padding: 50px 0;
 }
 
-#section4 h3 { color: #747475; }
-
-#section4 h6  {
-    margin: 0;
-    color: #747475;
-    max-width: 430px;
+#section4-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 500px;
+    height: inherit;
+    background-color: black; 
+    opacity: 0.45;
 }
-
-
 
 /*========================
 
 section5
 
 ========================*/
-#section5 { background-color: #393838; padding: 50px 0; }
+#section5 { 
+    background-color: #393838; 
+    padding: 50px 0; 
+    border-top: solid 10px #f06922;
+}
 
 #section5 h3 {
     text-align: center;
     color: #ebebeb;
     padding-bottom: 50px;
+}
+
+#section5 h6 {
+    text-align: center;
+    color: #ebebeb;
+    padding-bottom: 10px;
 }
 
 
@@ -368,7 +401,7 @@ Email-section
 .email-section { 
     height: 275px; 
     width: 100%;
-    background-color: #e8890c; 
+    background-color: #f06924; 
 }
 
 .email-content { 
@@ -447,11 +480,15 @@ Footer
 
 ========================*/
 footer {
-    background: url('../img/section1/section1-bg.jpg') center center;
+    background: url('../img/footer/footer.jpg') center center;
     position: relative;
     height: 375px;
     width: 100%;
     background-color: #0e152b;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 footer ul { padding-top: 70px; }
@@ -484,8 +521,8 @@ footer li p {
     width: 100%;
     min-height: 375px;
     height: inherit;
-    background-color: black; /* blue #103c5e */
-    opacity: 0.6;
+    background-color: #103c5e; 
+    opacity: 0.92;
 }
 
 #copyright { 
