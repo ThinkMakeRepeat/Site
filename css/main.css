@@ -209,13 +209,13 @@ section1
 }
 
 #section1 img { margin: 0 auto; display: table; }
-#logo2 { padding-top: 40px; width: 400px; }
+#logo2 { padding-top: 20px; width: 510px; }
 #section1 h1 { text-align: center; }
 #section1 h5 {
     text-align: center;
     line-height: 28px;
     color: #fff;
-    margin-top: 16px;
+    margin-top: 55px;
     max-width: 575px;
 }
 
@@ -259,7 +259,7 @@ img#headerImage {
     min-height: 100%;
 }
 
-#section2-content h2, #section2-content h5 { color: #252525; text-align: center; }
+#section2-content h2, #section2-content h5 { color: #393838; text-align: center; }
 #section2-content h5 { 
     max-width: 655px; 
     margin: 0 auto;
@@ -267,8 +267,8 @@ img#headerImage {
 }
 
 #section2-content ul { margin-top: 40px; }
-#section2-content ul h4 { color: #f06924; text-align: center; }
-#section2-content ul img { margin: 25px auto; display: block; height: 67px; }
+#section2-content ul h4 { color: #393838; text-align: center;   margin-bottom: 10px; }
+#section2-content ul img { margin: 25px auto; display: block; height: 85px; }
 
 
 /*========================
@@ -278,13 +278,13 @@ section3
 ========================*/
 #section3 { 
     width: 100%; 
-    min-height: 500px;
+    min-height: 470px;
     position: relative;
     background-color: #393838;
     border-bottom: solid 10px #f06922;
 }
 
-#section3-info { padding: 50px 20px; }
+#section3-info { padding: 80px 20px; }
 
 #section3 h3 {  color: #747475; }
 #section3 h3 span { color: #f06924; }
@@ -375,7 +375,8 @@ section5
 
 ========================*/
 #section5 { 
-    background-color: #393838; 
+    background-color: #393838;
+    background-image: url(../img/section5/blackScales.png);
     padding: 50px 0; 
     border-top: solid 10px #f06922;
 }
@@ -402,6 +403,8 @@ Email-section
     height: 275px; 
     width: 100%;
     background-color: #f06924; 
+
+    /*background-image: url(../img/email/cubes.png);*/
 }
 
 .email-content { 
@@ -412,7 +415,7 @@ Email-section
 
 .email-content h3 { 
     text-transform: uppercase; 
-    color: #0e152b;;
+    color: #393838;;
     text-align: center;
     margin-bottom: 10px;
     padding-top: 40px;
@@ -420,7 +423,7 @@ Email-section
 
 .email-content h6 {
     text-align: center;
-    color: #0e152b;;
+    color: #393838;;
     margin: 0 auto;
 }
 
