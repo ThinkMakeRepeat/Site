@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr.js"></script>
 	</head>
- 
+
 	<body>
 		<header class="main_h">
             <a class="logo" href="#"><img src="img/nav/Think-Make-Repeat_SeparatedWhite.svg" aria-label="" alt=""></a>
@@ -90,7 +90,7 @@
 			<div id="section3-content" class="row">
 				<div id="section3-info" class="six columns">
 					<h3>Creative <br> <span>process...</span></h3>
-					<h6>At times technology is the best fix for a problem, other times a more traditional approach is needed. We can solve all sorts of problems since we have different backgrounds, mindsets, and specialties. We look at each situation differently because they all are different. There are many goals of each problem to be solved and we strive to find the best solution that best meets those goals. 
+					<h6>At times technology is the best fix for a problem, other times a more traditional approach is needed. We can solve all sorts of problems since we have different backgrounds, mindsets, and specialties. We look at each situation differently because they all are different. There are many goals of each problem to be solved and we strive to find the best solution that best meets those goals.
 					</h6>
 				</div><!-- end section3-info -->
 
@@ -109,10 +109,10 @@
 			<div id="section4-content" class="row">
 				<div id="section4-info" class="six columns">
 					<h3>Maker <br> <span>Store</span></h3>
-					<h6>We are always creating and at times it can be hard to find materials. This store is comprised of jems we have found in our searches for the perfect parts. 
+					<h6>We are always creating and at times it can be hard to find materials. This store is comprised of jems we have found in our searches for the perfect parts.
 					<br>
 					<br>
-					We also sell items that we have created. When we make something we usually do a small run because if I'm going to make one, I might as well make 20! We are always inventing and solving issues that arise from products we bought and we want to offer these solutions to others in the community. 
+					We also sell items that we have created. When we make something we usually do a small run because if I'm going to make one, I might as well make 20! We are always inventing and solving issues that arise from products we bought and we want to offer these solutions to others in the community.
 					</h6>
 				</div><!-- end for-many-info -->
 
@@ -126,13 +126,180 @@
 		<div id="section5">
 			<h3>Latest Builds</h3>
 			<ul class="row">
-			  	<li class="three column"><a class="img-gallery" href="img/section5/image.png" alt=""><img src="img/section5/thumb.png"></a></li>
+			  	<li class="three column">
+						<a class="img-gallery" href="img/section5/image.png" alt="">
+							<img src="img/section5/thumb.png">
+							<h4>Cutting Board</h4>
+						</a>
+							<form action="." method="post">
+							        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
 
-			  	<li class="three column"><a class="img-gallery" href="img/section5/image.png" alt=""><img src="img/section5/thumb.png"></a></li>
+							        <input
 
-			  	<li class="three column"><a class="img-gallery" href="img/section5/image.png" alt=""><img src="img/section5/thumb.png"></a></li>
+							            type="submit"
+							            value="Buy now - $50"
+							            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+							            data-amount="50"
+							            data-currency="usd"
+							            data-name="Think Make Repeat"
+							            data-description="Cutting Board for $50"
+							        />
 
-			  	<li class="three column"><a class="img-gallery" href="img/section5/image.png" alt=""><img src="img/section5/thumb.png"></a></li>
+							        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+							        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+							        <script>
+							        $(document).ready(function() {
+							            $(':submit').on('click', function(event) {
+							                event.preventDefault();
+
+							                var $button = $(this),
+							                    $form = $button.parents('form');
+
+							                var opts = $.extend({}, $button.data(), {
+							                    token: function(result) {
+							                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+							                    }
+							                });
+
+							                StripeCheckout.open(opts);
+							            });
+							        });
+							        </script>
+							</form>
+
+
+
+					</li>
+					<li class="three column">
+						<a class="img-gallery" href="img/section5/image.png" alt="">
+							<img src="img/section5/thumb.png">
+							<h4>Cutting Board</h4>
+						</a>
+							<form action="." method="post">
+											<noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+											<input
+
+													type="submit"
+													value="Buy now - $50"
+													data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+													data-amount="50"
+													data-currency="usd"
+													data-name="Think Make Repeat"
+													data-description="Cutting Board for $50"
+											/>
+
+											<script src="https://checkout.stripe.com/v2/checkout.js"></script>
+											<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+											<script>
+											$(document).ready(function() {
+													$(':submit').on('click', function(event) {
+															event.preventDefault();
+
+															var $button = $(this),
+																	$form = $button.parents('form');
+
+															var opts = $.extend({}, $button.data(), {
+																	token: function(result) {
+																			$form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+																	}
+															});
+
+															StripeCheckout.open(opts);
+													});
+											});
+											</script>
+							</form>
+
+
+
+					</li><li class="three column">
+						<a class="img-gallery" href="img/section5/image.png" alt="">
+							<img src="img/section5/thumb.png">
+							<h4>Cutting Board</h4>
+						</a>
+							<form action="." method="post">
+							        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+							        <input
+
+							            type="submit"
+							            value="Buy now - $50"
+							            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+							            data-amount="50"
+							            data-currency="usd"
+							            data-name="Think Make Repeat"
+							            data-description="Cutting Board for $50"
+							        />
+
+							        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+							        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+							        <script>
+							        $(document).ready(function() {
+							            $(':submit').on('click', function(event) {
+							                event.preventDefault();
+
+							                var $button = $(this),
+							                    $form = $button.parents('form');
+
+							                var opts = $.extend({}, $button.data(), {
+							                    token: function(result) {
+							                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+							                    }
+							                });
+
+							                StripeCheckout.open(opts);
+							            });
+							        });
+							        </script>
+							</form>
+
+
+
+					</li><li class="three column">
+						<a class="img-gallery" href="img/section5/image.png" alt="">
+							<img src="img/section5/thumb.png">
+							<h4>Cutting Board</h4>
+						</a>
+							<form action="." method="post">
+							        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+							        <input
+
+							            type="submit"
+							            value="Buy now - $50"
+							            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+							            data-amount="50"
+							            data-currency="usd"
+							            data-name="Think Make Repeat"
+							            data-description="Cutting Board for $50"
+							        />
+
+							        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+							        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+							        <script>
+							        $(document).ready(function() {
+							            $(':submit').on('click', function(event) {
+							                event.preventDefault();
+
+							                var $button = $(this),
+							                    $form = $button.parents('form');
+
+							                var opts = $.extend({}, $button.data(), {
+							                    token: function(result) {
+							                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+							                    }
+							                });
+
+							                StripeCheckout.open(opts);
+							            });
+							        });
+							        </script>
+							</form>
+
+
+
+					</li>
 			</ul>
 		</div>
 
@@ -147,12 +314,12 @@
 
 					<input id="subscribe-field" type="email" value="" name="EMAIL" placeholder="email address" required>
 
-					<button class="contact-button" type="submit" value="Subscribe" name="subscribe">Submit</button> 
+					<button class="contact-button" type="submit" value="Subscribe" name="subscribe">Submit</button>
 
 			    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    	<div style="position: absolute; left: -5000px;">
 			    		<input type="text" name="b_265df7d89342cdafa7867c4fd_358dd2175b" tabindex="-1" value="">
-			    	</div>	
+			    	</div>
 				</form>
 			</div><!-- end section5-content -->
 		</section><!-- end email-section -->
@@ -160,7 +327,7 @@
 
 
 
-		
+
 		<footer>
 			<div id="footer-overlay"></div>
 			<ul id="footer-content" class="row">
@@ -232,7 +399,6 @@
 		</script>
 
 	    <!-- Google Analytics -->
-	    
+
 	</body>
 </html>
-
