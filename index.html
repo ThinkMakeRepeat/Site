@@ -21,51 +21,12 @@
 	</head>
  
 	<body>
-		<!--<header class="main_h">
-            <a class="logo" href="#"><img src="img/nav/Think-Make-Repeat_SeparatedWhite.svg" aria-label="" alt=""></a>
-
-            <div class="mobile-toggle" aria-label="hamburger menu icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#" aria-label="">Projects</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Store</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Tutorials</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Explorations</a></li>
-			        	<li><a href="#footer-content" aria-label="">Contact</a></li>
-                </ul>
-            </nav>
-        </header>-->
-
-        <!--<div class="main_h">
-            <a class="logo" href="#"><img src="img/nav/Think-Make-Repeat_SeparatedWhite.svg" aria-label="" alt=""></a>
-
-            <div class="mobile-toggle" aria-label="hamburger menu icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#" aria-label="">Projects</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Store</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Tutorials</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Explorations</a></li>
-			        	<li><a href="#footer-content" aria-label="">Contact</a></li>
-                </ul>
-            </nav>
-        </div>-->
-
+		
         <div id="transformicon" class="toggle-menu menu-right">
-	  					<span></span>
-	  					<span></span>
-	  					<span></span>
-					</div>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
 
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 			<div id="transformiconSpace"></div> 	
@@ -79,303 +40,268 @@
 		</nav>
 
 
+		<section id="landing">
+			<div id="landing-overlay"></div>
 
-
-		<section id="section1">
-			<div id="section1-overlay"></div>
-			<!--<nav>
-				<a class="logo" href="#"><img src="img/nav/Think-Make-Repeat_SeparatedWhite.svg" aria-label="" alt=""></a>
-			      	<ul>
-			        	<li><a href="#" aria-label="">Projects</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Store</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Tutorials</a></li>
-			        	<li><a href="#" target="_blank" aria-label="">Explorations</a></li>
-			        	<li><a href="#footer-content" aria-label="">Contact</a></li>
-			      	</ul>
-
-			      	<div id="transformicon" class="toggle-menu menu-right">
-	  					<span></span>
-	  					<span></span>
-	  					<span></span>
-					</div>
-    		</nav><!-- end nav -->
-
-			<div id="section1-content">
+			<div id="landing-content">
 				<!--<h1>These are some words!</h1>-->
-				<img id="logo2" src="img/section1/Think-Make-Repeat_SeparatedWhite.svg">
+				<img id="logo2" src="img/landing/Think-Make-Repeat_SeparatedWhite.svg">
 
-				<h5 class="seven columns centered">We are Makers, Inventors, Mad Scientists, Artists, Creators, Teachers, and Students. It's what we do and how we live.</h5>
-			</div><!-- end section1-content -->
-		</section><!-- end section1 -->
+				<h5 class="seven columns centered">We are Makers, Inventors, Mad Scientists, Artists, Creators, Teachers, and Students. It's what we do, how we live.</h5>
+			</div><!-- end landing-content -->
+		</section><!-- end landing -->
 
 
-		<div id="section2">
-			<h3>Latest Builds</h3>
+		<section id="store">
+			<div id="store-content" class="twelve columns centered">
+				<div id="sectionHeader">
+					<h2>maker store</h2>
+					<img id="headerImage" src="img/store/storeBattery.svg">
+				</div>
+
+				<h5>Our collection of handcrafted items.</h5>
+				<ul class="row">
+				  	<li class="three column">
+		  				<a class="img-gallery" href="img/store/products/cuttingboard/cuttingboard1_1000.jpg" alt=""> 
+						<img src="img/store/products/cuttingboard/cuttingboardThumb.jpg">
+						<h4>Cutting Board</h4></a>
+
+						<!-- hidden thumbs  -->
+	                    <a class="img-gallery" href="img/store/products/cuttingboard/cuttingboard2_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+	                    <a class="img-gallery" href="img/store/products/cuttingboard/cuttingboard3_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+	                    <a class="img-gallery" href="img/store/products/cuttingboard/cuttingboard4_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+
+
+						<form action="." method="post">
+					        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+					        <input
+
+					            type="submit"
+					            value="Buy now - $50"
+					            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+					            data-amount="50"
+					            data-currency="usd"
+					            data-name="Think Make Repeat"
+					            data-description="Cutting Board for $50"
+					        />
+
+					        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+					        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+					        <script>
+					        $(document).ready(function() {
+					            $(':submit').on('click', function(event) {
+					                event.preventDefault();
+
+					                var $button = $(this),
+					                    $form = $button.parents('form');
+
+					                var opts = $.extend({}, $button.data(), {
+					                    token: function(result) {
+					                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+					                    }
+					                });
+
+					                StripeCheckout.open(opts);
+					            });
+					        });
+					        </script>
+						</form>
+					</li>
+
+
+					<li class="three column">
+						<a class="img-gallery" href="img/store/products/hipster/hipster1_1000.jpg" alt="">
+							<img src="img/store/products/hipster/hipsterThumb.jpg">
+							<h4>Hipster Block</h4>
+						</a>
+
+						<!-- hidden thumbs  -->
+	                    <a class="img-gallery" href="img/store/products/hipster/hipster2_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+
+						<form action="." method="post">
+							<noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+							<input
+
+									type="submit"
+									value="Buy now - $50"
+									data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+									data-amount="50"
+									data-currency="usd"
+									data-name="Think Make Repeat"
+									data-description="Cutting Board for $50"
+							/>
+
+							<script src="https://checkout.stripe.com/v2/checkout.js"></script>
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+							<script>
+							$(document).ready(function() {
+									$(':submit').on('click', function(event) {
+										event.preventDefault();
+
+										var $button = $(this),
+												$form = $button.parents('form');
+
+										var opts = $.extend({}, $button.data(), {
+												token: function(result) {
+														$form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+												}
+										});
+
+										StripeCheckout.open(opts);
+									});
+							});
+							</script>
+						</form>
+					</li>
+
+
+					<li class="three column">
+						<a class="img-gallery" href="img/store/products/analogAudio/analogAudio1_1000.jpg" alt="">
+							<img src="img/store/products/analogAudio/analogAudioThumb.jpg">
+							<h4>Analog Audio</h4>
+						</a>
+
+						<!-- hidden thumbs  -->
+	                    <a class="img-gallery" href="img/store/products/analogAudio/analogAudio2_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+	                    <a class="img-gallery" href="img/store/products/analogAudio/analogAudio3_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+	                    <a class="img-gallery" href="img/store/products/analogAudio/analogAudio4_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+
+						<form action="." method="post">
+					        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+					        <input
+
+					            type="submit"
+					            value="Buy now - $50"
+					            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+					            data-amount="50"
+					            data-currency="usd"
+					            data-name="Think Make Repeat"
+					            data-description="Cutting Board for $50"
+					        />
+
+					        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+					        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+					        <script>
+					        $(document).ready(function() {
+					            $(':submit').on('click', function(event) {
+					                event.preventDefault();
+
+					                var $button = $(this),
+					                    $form = $button.parents('form');
+
+					                var opts = $.extend({}, $button.data(), {
+					                    token: function(result) {
+					                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+					                    }
+					                });
+
+					                StripeCheckout.open(opts);
+					            });
+					        });
+					        </script>
+						</form>
+					</li>
+
+					<li class="three column">
+						<a class="img-gallery" href="img/store/products/vallet/vallet1_1000.jpg" alt="">
+							<img src="img/store/products/vallet/valletThumb.jpg">
+							<h4>Office Vallet</h4>
+						</a>
+
+						<!-- hidden thumbs  -->
+	                    <a class="img-gallery" href="img/store/products/vallet/vallet2_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+	                    <a class="img-gallery" href="img/store/products/vallet/vallet3_1000.jpg"
+	                    <img src="#" style="width:0; height: 0; display:none;" alt=""></a>
+
+						<form action="." method="post">
+					        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
+
+					        <input
+
+					            type="submit"
+					            value="Buy now - $50"
+					            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
+					            data-amount="50"
+					            data-currency="usd"
+					            data-name="Think Make Repeat"
+					            data-description="Cutting Board for $50"
+					        />
+
+					        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+					        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+					        <script>
+					        $(document).ready(function() {
+					            $(':submit').on('click', function(event) {
+					                event.preventDefault();
+
+					                var $button = $(this),
+					                    $form = $button.parents('form');
+
+					                var opts = $.extend({}, $button.data(), {
+					                    token: function(result) {
+					                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
+					                    }
+					                });
+
+					                StripeCheckout.open(opts);
+					            });
+					        });
+					        </script>
+						</form>
+					</li>
+				</ul>
+			</div><!-- end store-content -->
+		</section><!-- end store -->
+
+		<div id="previous-projects">
+			<h3>Previous Projects</h3>
 			<ul class="row">
-			  	<li class="three column"><h6>Soldering Station</h6><a class="img-gallery" href="img/section2/image.png" alt=""><img src="img/section2/solderingStation/solderingStation.jpg"></a></li>
+			  	<li class="three column"><h6>Soldering Station</h6><a class="img-gallery" href="img/previousProjects/image.png" alt=""><img src="img/previousProjects/solderingStation/solderingStation.jpg"></a></li>
 
-			  	<li class="three column"><h6>Micro Battlebot</h6><a class="img-gallery" href="img/section2/image.png" alt=""><img src="img/section2/thumb.png"></a></li>
+			  	<li class="three column"><h6>Micro Battlebot</h6><a class="img-gallery" href="img/previousProjects/image.png" alt=""><img src="img/previousProjects/thumb.png"></a></li>
 
-			  	<li class="three column"><h6>Dustin's Words</h6><a class="img-gallery" href="img/section2/dustinsWords/image.png" alt=""><img src="img/section2/dustinsWords/DW-Device-thumb.jpg"></a></li>
+			  	<li class="three column"><h6>Dustin's Words</h6><a class="img-gallery" href="img/previousProjects/dustinsWords/image.png" alt=""><img src="img/previousProjects/dustinsWords/DW-Device-thumb.jpg"></a></li>
 
-			  	<li class="three column"><h6>paperproto</h6><a class="img-gallery" href="img/section2/image.png" alt=""><img src="img/section2/paperproto/paperproto_3d_printing-thumb.jpg"></a></li>
+			  	<li class="three column"><h6>paperproto</h6><a class="img-gallery" href="img/previousProjects/image.png" alt=""><img src="img/previousProjects/paperproto/paperproto_3d_printing-thumb.jpg"></a></li>
 			</ul>
 		</div>
 
 
-
-		<section id="section3">
-			<div id="section3-content" class="twelve columns centered">
-				<div id="sectionHeader">
-					<h2>maker store</h2>
-					<img id="headerImage" src="img/section3/section3H2.svg">
-				</div>
-
-				<h5>Through all of our research and explorations we have had to create solutions for ourselves to reach our goals. Here are some kits and items to help you get started on your projects!
-				</h5>
-				<ul class="row">
-			  	<li class="three column">
-						<a class="img-gallery" href="img/section5/image.png" alt="">
-							<img src="img/section5/thumb.png">
-							<h4>Cutting Board</h4>
-						</a>
-							<form action="." method="post">
-							        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
-
-							        <input
-
-							            type="submit"
-							            value="Buy now - $50"
-							            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
-							            data-amount="50"
-							            data-currency="usd"
-							            data-name="Think Make Repeat"
-							            data-description="Cutting Board for $50"
-							        />
-
-							        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
-							        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-							        <script>
-							        $(document).ready(function() {
-							            $(':submit').on('click', function(event) {
-							                event.preventDefault();
-
-							                var $button = $(this),
-							                    $form = $button.parents('form');
-
-							                var opts = $.extend({}, $button.data(), {
-							                    token: function(result) {
-							                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-							                    }
-							                });
-
-							                StripeCheckout.open(opts);
-							            });
-							        });
-							        </script>
-							</form>
-
-
-
-					</li>
-					<li class="three column">
-						<a class="img-gallery" href="img/section5/image.png" alt="">
-							<img src="img/section5/thumb.png">
-							<h4>Cutting Board</h4>
-						</a>
-							<form action="." method="post">
-											<noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
-
-											<input
-
-													type="submit"
-													value="Buy now - $50"
-													data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
-													data-amount="50"
-													data-currency="usd"
-													data-name="Think Make Repeat"
-													data-description="Cutting Board for $50"
-											/>
-
-											<script src="https://checkout.stripe.com/v2/checkout.js"></script>
-											<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-											<script>
-											$(document).ready(function() {
-													$(':submit').on('click', function(event) {
-															event.preventDefault();
-
-															var $button = $(this),
-																	$form = $button.parents('form');
-
-															var opts = $.extend({}, $button.data(), {
-																	token: function(result) {
-																			$form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-																	}
-															});
-
-															StripeCheckout.open(opts);
-													});
-											});
-											</script>
-							</form>
-
-
-
-					</li><li class="three column">
-						<a class="img-gallery" href="img/section5/image.png" alt="">
-							<img src="img/section5/thumb.png">
-							<h4>Cutting Board</h4>
-						</a>
-							<form action="." method="post">
-							        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
-
-							        <input
-
-							            type="submit"
-							            value="Buy now - $50"
-							            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
-							            data-amount="50"
-							            data-currency="usd"
-							            data-name="Think Make Repeat"
-							            data-description="Cutting Board for $50"
-							        />
-
-							        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
-							        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-							        <script>
-							        $(document).ready(function() {
-							            $(':submit').on('click', function(event) {
-							                event.preventDefault();
-
-							                var $button = $(this),
-							                    $form = $button.parents('form');
-
-							                var opts = $.extend({}, $button.data(), {
-							                    token: function(result) {
-							                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-							                    }
-							                });
-
-							                StripeCheckout.open(opts);
-							            });
-							        });
-							        </script>
-							</form>
-
-
-
-					</li><li class="three column">
-						<a class="img-gallery" href="img/section5/image.png" alt="">
-							<img src="img/section5/thumb.png">
-							<h4>Cutting Board</h4>
-						</a>
-							<form action="." method="post">
-							        <noscript>You must <a href="http://www.enable-javascript.com" target="_blank">enable JavaScript</a> in your web browser in order to pay via Stripe.</noscript>
-
-							        <input
-
-							            type="submit"
-							            value="Buy now - $50"
-							            data-key="pk_live_WI9Pv5MPIQFHftuebeAWjLIc"
-							            data-amount="50"
-							            data-currency="usd"
-							            data-name="Think Make Repeat"
-							            data-description="Cutting Board for $50"
-							        />
-
-							        <script src="https://checkout.stripe.com/v2/checkout.js"></script>
-							        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-							        <script>
-							        $(document).ready(function() {
-							            $(':submit').on('click', function(event) {
-							                event.preventDefault();
-
-							                var $button = $(this),
-							                    $form = $button.parents('form');
-
-							                var opts = $.extend({}, $button.data(), {
-							                    token: function(result) {
-							                        $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
-							                    }
-							                });
-
-							                StripeCheckout.open(opts);
-							            });
-							        });
-							        </script>
-							</form>
-
-
-
-					</li>
-			</ul>
-
-				<div class="six columns"></div>
-				<div class="six columns"></div>
-
-
-				<!--Everything we do is to improve the lives of ourselves or others. We notice all sorts of things life can be improved on. Luckily, since the invent to the internet everyone has gotten smater, better, and in turn helped us get better. We have been able to objectively see what is wrong, come up with a solution and that not only helps us, it helps others.-->
-
-				<!--We employ all sorts of different techniques to solve for the problems we are tasked. We don't automatically know the asnwer until we explore the landscape, but we will always find a solution. We love to solve problems for ourselves to help others.
-
-
-
-				<div class="row">
-					<ul>
-						<li class="four columns">
-							<img src="img/section2/thinkIcon.svg" alt="">
-							<h4>Think</h4>
-							<h5>Think of unique ways to solve problems.</h5>
-						</li>
-						<li class="four columns">
-							<img src="img/section2/makeIcon.svg" alt="">
-							<h4>Make</h4>
-							<h5>Making a proof of concept, proving the idea is viable.</h5>
-						</li>
-						<li class="four columns">
-							<img src="img/section2/repeatIcon.svg" alt="">
-							<h4>Repeat</h4>
-							<h5>The problem is solved for now, time to move on to the next project.</h5>
-						</li>
-					</ul>
-				</div><!-- end row -->
-			</div><!-- end section2-content -->
-		</section><!-- end section2 -->
-
-
-		<section id="section4">
-			<div id="section4-content" class="row">
-				<div id="section4-info" class="six columns">
+		<!--<section id="tutorials">
+			<div id="tutorials-content" class="row">
+				<div id="tutorials-info" class="six columns">
 					<h3>Project <br> <span>tutorials...</span></h3>
-					<h6>Our lives are split betwwen right and left brain.<!--We think of big ideas that are down to earth.--> Creative solutions, so practiple, they border impossible! 
+					<h6>Our lives are split betwwen right and left brain. Creative solutions, so practiple, they border impossible! 
 
 						We apprach every problem we face with equal parts of right and left brain. 
-
-
-						<!--At times technology is the best fix for a problem, other times a more traditional approach is needed. We look at the issue and will come up with a number of possible solutions. Once we decide on the best we sprint in creating what is needed to prove the idea will work. Sometimes it's a prototype, an image, or even just a conversation. -->
 					</h6>
-				</div><!-- end section3-info -->
+				</div><!-- end store-info -->
 
 
-				<div id="section4-img" class="six columns">
-					<img src="img/section4/creativeProcess.svg">
-				</div><!-- end section3-video -->
+				<!--<div id="tutorials-img" class="six columns">
+					<img src="img/tutorials/creativeProcess.svg">
+				</div><!-- end store-video -->
 
-
-				<!--<div id="section3-video" class="six columns">
-					<div class="video-wrapper">
-	    				<iframe width="560" height="315" src="https://www.youtube.com/embed/JfxeODnYIuE" frameborder="0" allowfullscreen></iframe>
-					</div><!-- end video-wrapper
-				</div><!-- end section3-video -->
-			</div><!-- end section3-content -->
-		</section><!-- end section3 -->
+			<!--</div><!-- end store-content -->
+		<!--</section><!-- end store -->
 
 
 
-		<section id="section5">
-			<div id="section5-overlay"></div>
-			<div id="section5-content" class="row">
-				<div id="section5-info" class="six columns">
+		<section id="explorations">
+			<div id="explorations-overlay"></div>
+			<div id="explorations-content" class="row">
+				<div id="explorations-info" class="six columns">
 					<h3>TMR <br> <span>Explorations</span></h3>
 					<h6>We are always creating solutions for ourselves. If we have a problem we look at the market to see what exists and if what we need doesn't exist, we create it. We have many items that we have made that can be purchased as kits or put together products.
 					<br>
@@ -383,12 +309,8 @@
 					Not only do we have products we have created, we have building materials. There are many items that can be hard to find or when you do find them, they are overpriced. We are always looking for the hardware to finish our projects and we know you do the same. 
 					</h6>
 				</div><!-- end for-many-info -->
-
-				<!--<div id="section4-image" class="six columns">
-					<img src="img/section4/image.jpg" alt="">
-				</div><!-- end section4-container --> 
-			</div><!-- end section4-content -->
-		</section><!-- end section4 -->
+			</div><!-- end explorations-content -->
+		</section><!-- end explorations -->
 
 
 		
@@ -416,9 +338,114 @@
 
 
 		<footer>
-			<div id="footer-overlay"></div>
-			<ul id="footer-content" class="row">
-				<li class="three columns">
+			<!--<div id="footer-overlay"></div>-->
+			<ul>
+				<li class="fadeIn">
+					<a href="http://instagram.com/donnieplumly" target="_blank">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#E9EBE4;}
+						</style>
+						<g>
+							<path class="social" d="M-298.5,109.4c0-7.1,0-14.2,0-21.3c0,0,0-0.1,0-0.1c0.2-1.1,0.7-1.9,1.7-2.4c0.3-0.1,0.7-0.2,1-0.3
+								c7.2,0,14.3,0,21.5,0c0.6,0.1,1.1,0.3,1.6,0.7c0.7,0.6,1.2,1.4,1.2,2.3c0,7,0,13.9,0,20.9c0,1.7-1.4,3.1-3.1,3.1
+								c-6.9,0-13.9,0-20.8,0c-1.1,0-2-0.5-2.6-1.5C-298.3,110.3-298.4,109.9-298.5,109.4z M-277,96.7c0.4,1.7,0.4,3.3-0.2,4.9
+								c-0.6,1.6-1.5,2.9-2.9,3.9c-1.4,1-2.9,1.5-4.6,1.6c-2.2,0.1-4.1-0.5-5.7-2c-2.5-2.2-3.4-5.1-2.7-8.4c-0.8,0-1.5,0-2.3,0
+								c0,0.1,0,0.2,0,0.2c0,3.7,0,7.3,0,11c0,0.1,0,0.3,0,0.4c0.1,0.4,0.3,0.7,0.7,0.8c0.2,0,0.4,0.1,0.5,0.1c6,0,12.1,0,18.1,0
+								c0.1,0,0.2,0,0.3,0c0.1,0,0.3,0,0.4-0.1c0.5-0.2,0.6-0.6,0.6-1.1c0-3.7,0-7.4,0-11c0-0.1,0-0.1,0-0.2
+								C-275.4,96.7-276.2,96.7-277,96.7z M-279.8,98.8c0-2.8-2.3-5.2-5.2-5.2c-2.8,0-5.2,2.3-5.2,5.2c0,2.9,2.3,5.2,5.2,5.2
+								C-282.2,104-279.9,101.7-279.8,98.8z M-274.6,91c0-0.3,0-0.5,0-0.8c0-0.3,0-0.5,0-0.8c0-0.6-0.4-1.1-1-1.1c-1.1,0-2.1,0-3.2,0
+								c-0.6,0-1,0.4-1,1c0,1.1,0,2.2,0,3.2c0,0.5,0.4,0.9,0.9,0.9c1.1,0,2.2,0,3.3,0c0.6,0,1-0.5,1-1.1C-274.6,92-274.6,91.5-274.6,91z"
+								/>
+							<path class="social" d="M-295.8,85.3c-0.3,0.1-0.7,0.2-1,0.3c-1,0.5-1.6,1.3-1.7,2.4c0,0,0,0.1,0,0.1"/>
+						</g>
+						<g>
+							<path class="social" d="M19.1,9.6c0.2,0,0.3,0,0.4,0c2.4,0,4.7,0,7.1,0c0.3,0,0.4,0.1,0.4,0.4c0,3.9,0,7.8,0,11.7c0,2.7-2.1,5-4.7,5.2
+								c-0.2,0-0.5,0-0.7,0c-5.4,0-10.8,0-16.2,0c-2.7,0-5-2.1-5.3-4.8c0-0.3,0-0.5,0-0.8c0-3.8,0-7.7,0-11.5c0-0.3,0.1-0.4,0.4-0.4
+								c2.4,0,4.7,0,7.1,0c0.1,0,0.2,0,0.4,0c-1.2,1.9-1.6,3.8-1,5.9c0.4,1.5,1.3,2.7,2.5,3.6c2.4,1.8,5.8,1.8,8.2-0.1
+								c1.5-1.1,2.3-2.6,2.6-4.4C20.5,12.8,20.1,11.1,19.1,9.6z"/>
+							<path class="social" d="M26.9,8.8c-0.1,0-0.2,0-0.3,0c-2.7,0-5.3,0-8,0c-0.1,0-0.3-0.1-0.4-0.2c-2.7-2.5-6.8-2.5-9.5,0
+								C8.6,8.7,8.5,8.8,8.3,8.8c-2.7,0-5.4,0-8.1,0c-0.1,0-0.1,0-0.2,0c0,0,0,0,0-0.1c0-1.5,0-3,0.1-4.5C0.3,2.9,1,1.9,2.1,1.1
+								C2.1,1,2.1,1,2.2,1c0,0,0,0,0.1,0c0,1.9,0,3.8,0,5.6c0.4,0,0.7,0,1.1,0c0-0.1,0-0.2,0-0.4c0-1.8,0-3.6,0-5.4c0-0.5,0-0.5,0.5-0.7
+								c0.1,0,0.1,0,0.3,0c0,2.2,0,4.3,0,6.5c0.4,0,0.7,0,1.1,0c0-2.2,0-4.4,0-6.6C5.5,0,5.7,0,6,0c0,2.2,0,4.4,0,6.7c0.4,0,0.7,0,1.1,0
+								c0-2.2,0-4.4,0-6.7c0.2,0,0.3,0,0.4,0c4.8,0,9.5,0,14.3,0c2.6,0,5,2.1,5.1,4.7c0.1,1.3,0,2.7,0.1,4C26.9,8.7,26.9,8.7,26.9,8.8z
+								 M24.5,4.5c0-0.5,0-1,0-1.4c0-0.5-0.3-0.8-0.8-0.8c-1,0-1.9,0-2.9,0c-0.5,0-0.8,0.4-0.8,0.9c0,1,0,1.9,0,2.9c0,0.5,0.3,0.9,0.9,0.9
+								c0.9,0,1.9,0,2.8,0c0.5,0,0.9-0.4,0.9-0.9C24.5,5.4,24.5,4.9,24.5,4.5z"/>
+							<path class="social" d="M13.5,18.9c-2.9,0-5.3-2.4-5.3-5.3c0-2.9,2.4-5.3,5.3-5.3c2.9,0,5.3,2.4,5.3,5.3
+								C18.8,16.5,16.4,18.9,13.5,18.9z M9.6,13.6c0,2.1,1.7,3.9,3.9,3.9c2.1,0,3.9-1.8,3.9-3.9c0-2.2-1.7-3.9-3.9-3.9
+								C11.3,9.7,9.6,11.4,9.6,13.6z"/>
+						</g>
+						</svg>
+					</a>
+				</li>
+
+				<li class="fadeIn">
+					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:#E9EBE4;}
+								.st1{font-family:'OpenSans-Bold';}
+								.st2{font-size:7.9072px;}
+							</style>
+							<text transform="matrix(1 0 0 1 6.041 19.2676)" class="st0 st1 st2">3</text>
+							<text transform="matrix(1 0 0 1 16.1182 19.2676)" class="st0 st1 st2">D</text>
+							<rect x="1.3" y="6.6" class="social" width="2.3" height="13.8"/>
+							<rect x="17.8" y="-2.6" transform="matrix(0.472 -0.8816 0.8816 0.472 6.2409 19.0209)" class="social" width="2.3" height="13.8"/>
+							<rect x="6.8" y="-2.6" transform="matrix(0.4772 0.8788 -0.8788 0.4772 7.9593 -4.6965)" class="social" width="2.3" height="13.8"/>
+							<rect x="6.8" y="3.4" transform="matrix(-0.472 0.8816 -0.8816 -0.472 20.7717 8.1674)" class="social" width="2.3" height="13.8"/>
+							<rect x="17.8" y="3.3" transform="matrix(-0.4772 -0.8788 0.8788 -0.4772 19.066 31.8695)" class="social" width="2.3" height="13.8"/>
+							<rect x="6.8" y="15.8" transform="matrix(-0.472 0.8816 -0.8816 -0.472 31.6808 26.4251)" class="social" width="2.3" height="13.8"/>
+							<rect x="17.8" y="15.7" transform="matrix(-0.4772 -0.8788 0.8788 -0.4772 8.1534 50.1686)" class="social" width="2.3" height="13.8"/>
+							<rect x="12.2" y="12.2" class="social" width="2.3" height="13.8"/>
+							<rect x="23.3" y="6.5" class="social" width="2.3" height="13.8"/>
+						</svg>
+					</a>
+				</li>
+
+				<li class="fadeIn">
+					<a href="https://github.com/dplumly" target="_blank">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+							<g>
+								<path class="social" d="M0,15.4c0-0.7,0-1.4,0-2c0,0,0-0.1,0.1-0.1c0.2-1.7,0.9-3.2,2-4.5c0.1-0.1,0.1-0.3,0.1-0.5c0-0.7,0-1.5,0-2.2
+									c0.1-1.4,0.4-2.7,1-4c2.3,0.5,4.3,1.5,6.2,2.8C9.6,5,10,5,10.3,5c1.7,0,3.4-0.3,5.1-0.1c1.2,0.1,2.2,0,3.3-0.7
+									c1.5-1,3.3-1.8,5.2-2.1c0.7,1.9,1.1,3.7,1,5.7c0,0.6,0.1,1,0.4,1.4c0.5,0.8,1,1.7,1.3,2.6c0.6,1.6,0.4,3.3,0.1,5
+									c-0.6,4.3-3.7,7.4-8,7.9c-3.5,0.4-7,0.5-10.5,0c-3.8-0.5-6.8-2.8-7.8-6.8C0.2,17.1,0.1,16.2,0,15.4z M13.5,23.7c2,0,4.1,0,6-0.6
+									c3.6-1,4.3-4.3,3.7-6.8c-0.5-2.1-2.2-3.2-4.5-3.2c-2.1,0-4.1,0.2-6.2,0.2c-1.4,0-2.7-0.2-4.1-0.2c-1.5,0-2.8,0.4-3.8,1.7
+									C2.4,17.7,3.8,22,7.4,23C9.4,23.6,11.4,23.7,13.5,23.7z"/>
+							</g>
+							<g>
+								<ellipse class="social" cx="8.9" cy="18.1" rx="1.9" ry="2.6"/>
+								<ellipse class="social" cx="18.3" cy="18" rx="1.9" ry="2.6"/>
+							</g>
+						</svg>
+					</a>
+				</li>
+
+				<li class="fadeIn">
+					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
+						<g>
+							<path class="social" d="M0,21.1c0-4.8,0-9.5,0-14.3c0-0.1,0-0.1,0-0.2c0.1-0.7,0.5-1.4,1-1.9c0.7-0.6,1.5-0.9,2.4-0.9
+								c6.6,0,13.1,0,19.7,0c0.2,0,0.5,0,0.7,0C25.1,4,26,4.5,26.6,5.6c0.2,0.4,0.3,0.8,0.4,1.2c0,4.8,0,9.5,0,14.3c0,0.1-0.1,0.2-0.1,0.3
+								c-0.2,0.7-0.5,1.3-1,1.8c-0.7,0.6-1.5,0.9-2.4,0.9c-2.7,0-5.3,0-8,0c-4,0-8,0-12,0c-1.5,0-2.5-0.6-3.2-2C0.2,21.7,0.1,21.4,0,21.1z
+								 M2.9,22.2C3,22.2,3,22.2,2.9,22.2c0.2,0.1,0.4,0.2,0.7,0.2c4.3,0,8.6,0,12.9,0c2.3,0,4.6,0,7,0c0.2,0,0.4-0.1,0.7-0.1
+								c-2.5-2.8-4.9-5.6-7.3-8.4c-0.2,0.1-0.3,0.2-0.4,0.4c-0.8,0.7-1.5,1.3-2.3,2c-0.3,0.3-0.8,0.3-1.1,0c-0.5-0.4-1-0.8-1.5-1.2
+								c-0.4-0.4-0.8-0.7-1.3-1.1C7.8,16.7,5.4,19.4,2.9,22.2z M13.5,14.5c3.5-3,6.9-5.9,10.5-9c-0.2,0-0.3-0.1-0.5-0.1
+								c-6.6,0-13.3,0-19.9,0c-0.1,0-0.3,0-0.5,0.1C6.6,8.5,10,11.5,13.5,14.5z M18.1,12.8c2.4,2.7,4.8,5.4,7.1,8.2c0,0,0,0,0.1,0
+								c0-0.2,0-0.3,0-0.5c0-4.4,0-8.8,0-13.1c0-0.2,0-0.3,0-0.5c0,0,0-0.1-0.1-0.2C22.8,8.7,20.5,10.7,18.1,12.8z M1.9,6.7
+								C1.8,6.7,1.8,6.7,1.9,6.7C1.8,6.9,1.7,7.1,1.7,7.3c0,4.4,0,8.9,0,13.3c0,0.1,0,0.3,0,0.4c0,0,0,0,0.1,0c2.4-2.7,4.8-5.4,7.1-8.2
+								C6.6,10.7,4.2,8.7,1.9,6.7z"/>
+						</g>
+						</svg>
+					</a>
+				</li>
+
+
+				<!--<li class="three columns">
 					<a href="https://github.com/ThinkMakeRepeat" target="_blank"><img src="img/footer/github.svg" alt="GitHub Logo and link to our profile"></a>
 					<h6>github</h6>
 					<p>Our code is open source. Download to make it your own.</p>
@@ -437,7 +464,7 @@
 					<a href="mailto:thinkmakerepeat@gmail.com" target="_blank"><img src="img/footer/email.svg" alt="Email Link"></a>
 					<h6>email</h6>
 					<p>Email us if you want to talk or have improvements.</p>
-				</li>
+				</li>-->
 			</ul>
 			<p id="copyright">© Think, Make, Repeat. </p>
 		</footer>
