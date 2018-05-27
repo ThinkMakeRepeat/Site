@@ -1,5 +1,22 @@
 @charset "UTF-8";
 
+
+
+/*========================
+
+Onramp
+
+========================*/
+@font-face {
+    font-family: 'onrampregular';
+    src: url('../fonts/onramp/onramp.woff2') format('woff2'),
+         url('../fonts/onramp/onramp.woff') format('woff'),
+         url('../fonts/onramp/onramp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*========================
 
 avenir
